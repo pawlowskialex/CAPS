@@ -61,24 +61,26 @@ void setKeyboard(struct __IOHIDDevice *device, CFDictionaryRef keyboardDictionar
                 
                 // Get current keyboard led status
                 IOHIDValueRef currentValue = 0;
-                IOHIDDeviceGetValue(device, element, &currentValue);
-                long current = IOHIDValueGetIntegerValue(currentValue);
-                CFRelease(currentValue);
-                
-                // Should we try to set the led?
-                if (changes[led] != NoChange && changes[led] != current) {
-                    IOHIDValueRef newValue = IOHIDValueCreateWithIntegerValue(kCFAllocatorDefault, element, 0, changes[led]);
-                    if (newValue) {
-                        IOReturn changeResult = IOHIDDeviceSetValue(device, element, newValue);
-                        
-                        // Was the change successful?
-                        if (kIOReturnSuccess == changeResult && verbose) {
-                            printf("%s%s ", stateSymbol[changes[led]], ledNames[led - 1]);
+                if (IOHIDDeviceGetValue(device, element, &currentValue) == kIOReturnSuccess &&
+                    IOHIDValueGetLength(currentValue) < 3) {
+                    long current = IOHIDValueGetIntegerValue(currentValue);
+                    CFRelease(currentValue);
+                    
+                    // Should we try to set the led?
+                    if (changes[led] != NoChange && changes[led] != current) {
+                        IOHIDValueRef newValue = IOHIDValueCreateWithIntegerValue(kCFAllocatorDefault, element, 0, changes[led]);
+                        if (newValue) {
+                            IOReturn changeResult = IOHIDDeviceSetValue(device, element, newValue);
+                            
+                            // Was the change successful?
+                            if (kIOReturnSuccess == changeResult && verbose) {
+                                printf("%s%s ", stateSymbol[changes[led]], ledNames[led - 1]);
+                            }
+                            CFRelease(newValue);
                         }
-                        CFRelease(newValue);
+                    } else if (verbose) {
+                        printf("%s%s ", stateSymbol[current], ledNames[led - 1]);
                     }
-                } else if (verbose) {
-                    printf("%s%s ", stateSymbol[current], ledNames[led - 1]);
                 }
             }
         }
