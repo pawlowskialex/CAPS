@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAB525591B8E1F5A0069C8FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB525581B8E1F5A0069C8FD /* AppDelegate.swift */; };
+		FAB5255E1B8E1F5A0069C8FD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB5255C1B8E1F5A0069C8FD /* MainMenu.xib */; };
+		FAB5256B1B8E1FD50069C8FD /* keyboard_leds.c in Sources */ = {isa = PBXBuildFile; fileRef = FAB525691B8E1FD50069C8FD /* keyboard_leds.c */; };
+		FAB5256D1B8E220E0069C8FD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB5256C1B8E220E0069C8FD /* Media.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FAB525551B8E1F5A0069C8FD /* CAPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB525581B8E1F5A0069C8FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAB5255D1B8E1F5A0069C8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FAB5255F1B8E1F5A0069C8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB525651B8E1F9E0069C8FD /* CAPS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAPS-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAB525691B8E1FD50069C8FD /* keyboard_leds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keyboard_leds.c; sourceTree = "<group>"; };
+		FAB5256A1B8E1FD50069C8FD /* keyboard_leds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyboard_leds.h; sourceTree = "<group>"; };
+		FAB5256C1B8E220E0069C8FD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB525521B8E1F5A0069C8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAB5254C1B8E1F5A0069C8FD = {
+			isa = PBXGroup;
+			children = (
+				FAB525571B8E1F5A0069C8FD /* CAPS */,
+				FAB525561B8E1F5A0069C8FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB525561B8E1F5A0069C8FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB525551B8E1F5A0069C8FD /* CAPS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB525571B8E1F5A0069C8FD /* CAPS */ = {
+			isa = PBXGroup;
+			children = (
+				FAB525581B8E1F5A0069C8FD /* AppDelegate.swift */,
+				FAB525691B8E1FD50069C8FD /* keyboard_leds.c */,
+				FAB5256A1B8E1FD50069C8FD /* keyboard_leds.h */,
+				FAB5255C1B8E1F5A0069C8FD /* MainMenu.xib */,
+				FAB5255F1B8E1F5A0069C8FD /* Info.plist */,
+				FAB525651B8E1F9E0069C8FD /* CAPS-Bridging-Header.h */,
+				FAB5256C1B8E220E0069C8FD /* Media.xcassets */,
+			);
+			path = CAPS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB525541B8E1F5A0069C8FD /* CAPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB525621B8E1F5A0069C8FD /* Build configuration list for PBXNativeTarget "CAPS" */;
+			buildPhases = (
+				FAB525511B8E1F5A0069C8FD /* Sources */,
+				FAB525521B8E1F5A0069C8FD /* Frameworks */,
+				FAB525531B8E1F5A0069C8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAPS;
+			productName = CAPS;
+			productReference = FAB525551B8E1F5A0069C8FD /* CAPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB5254D1B8E1F5A0069C8FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alex Pawlowski";
+				TargetAttributes = {
+					FAB525541B8E1F5A0069C8FD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = FAB525501B8E1F5A0069C8FD /* Build configuration list for PBXProject "CAPS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAB5254C1B8E1F5A0069C8FD;
+			productRefGroup = FAB525561B8E1F5A0069C8FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB525541B8E1F5A0069C8FD /* CAPS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB525531B8E1F5A0069C8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB5256D1B8E220E0069C8FD /* Media.xcassets in Resources */,
+				FAB5255E1B8E1F5A0069C8FD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB525511B8E1F5A0069C8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB5256B1B8E1FD50069C8FD /* keyboard_leds.c in Sources */,
+				FAB525591B8E1F5A0069C8FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAB5255C1B8E1F5A0069C8FD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB5255D1B8E1F5A0069C8FD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB525601B8E1F5A0069C8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAB525611B8E1F5A0069C8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FAB525631B8E1F5A0069C8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CAPS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pawlowski.CAPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CAPS/CAPS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAB525641B8E1F5A0069C8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CAPS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pawlowski.CAPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CAPS/CAPS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB525501B8E1F5A0069C8FD /* Build configuration list for PBXProject "CAPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB525601B8E1F5A0069C8FD /* Debug */,
+				FAB525611B8E1F5A0069C8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB525621B8E1F5A0069C8FD /* Build configuration list for PBXNativeTarget "CAPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB525631B8E1F5A0069C8FD /* Debug */,
+				FAB525641B8E1F5A0069C8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB5254D1B8E1F5A0069C8FD /* Project object */;
+}
